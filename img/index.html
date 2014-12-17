@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='tttApp'>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+	<body>
+		<div id="row-one">
+			<div id="1a" class="square" ng-controller="TttController">
+			<div ng-repeat="x in grid">1A{{x.xmark}}
+			</div>
+			<div id="1a" class="square" ng-controller="TttController">
+			<div ng-repeat="x in grid">1C{{x.xmark}}
+			</div>
+		</div>	
+	</body>
+</html>
+

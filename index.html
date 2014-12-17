@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="tttApp">
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<script src="js/angular.js"></script>
+	<script src="js/app.js"></script>
+</head>
+	<body>
+	<div class="allcss">
+		<div class="heading">TIC TAC TOE</div>
+
+		<!-- Grid layout -->
+		<div class="gamegrid" ng-controller="TttController as tttCtrl">
+			<div class="row" x-ng-repeat="row in grid">
+				<div class="square" id="a1" x-ng-repeat="cell in row" data-ng-click="mark()">{{cell.cellState}}-{{$parent.$index}}-{{$index}}</div>
+			</div>
+		</div>	
+		<div class="footing">reset and info</div>
+	</div>
+	</body>
+</html>
+
+<!-- <ul class='donuts'>
+        		<li ng-click="removeDonut($index)" ng-repeat="donut in my.donuts">
+          		<img ng-src="{{donut.image}}" alt="{{donut.type}}">
+         	 	<h4>{{donut.type}}</h4>
+        		</li>
+      		</ul>
+-->
