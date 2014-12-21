@@ -1,0 +1,83 @@
+.allcss {
+	background-color: black;
+}
+.heading {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top: 5px;
+	left: 0px;
+	background-color: yellow;
+}
+
+.middling {
+	text-align: center;
+	width: 100%;
+	display: inline;
+	padding: 0;
+}
+
+
+.l-containing {
+	width: 32%;
+	height: 900px;
+	position: relative;
+	left: 0px;
+	float: left;
+	background-color: blue;
+	padding: 0;
+
+}
+
+.r-containing {
+	width: 68%;
+	height: 900px;
+	position: relative;
+	right: 0px;
+	float: left;
+	background-color: grey;
+	padding: 0;
+	
+}
+
+/*.row {
+	width: 625px;
+}*/
+
+.grid-boundry {
+	position: absolute;
+	top: 225px;
+	right: 100px;
+	background-color: white;
+	height: 600px;
+	width: 600px;
+}
+
+
+.square {
+	height: 180px;
+	width: 180px;
+	border: 2px solid black;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 5px;
+	background-color: grey;		
+}
+.square:hover {
+  zoom: 1;
+  filter: alpha(opacity75);
+  opacity: 0.75;
+  border-radius: 500px;
+  background-image: url("../img/x-mark.png");
+
+}
+
+.footing {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	background-color: red;
+	float: left;
+}

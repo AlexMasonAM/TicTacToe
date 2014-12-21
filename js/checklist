@@ -1,0 +1,2 @@
+1. check for cellState = occupied
+2. move winCondtions to a function 
